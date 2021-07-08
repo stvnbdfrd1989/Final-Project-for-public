@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Sen", sans-serif;
+  padding: 2%;
+  background-color: rgb(250, 250, 250);
+}
+
+header {
+  font-weight: bolder;
+  font-size: 36px;
+}
+
+.brand {
+  color: rgb(0, 112, 103);
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  justify-content: space-evenly;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: lightgray;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.carousel {
+  background: #eee;
+}
+
+.carousel-cell {
+  width: 40%;
+  height: 300px;
+  margin-right: 10px;
+  background: #26a69a;
+  border-radius: 5px;
+  text-align: left;
+  padding: 2%;
+}
+
+.carousel-pic {
+  width: 250px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  color: white;
+}
+
+h3 {
+  text-align: center;
+}
+
+.article1 {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-content: flex-start;
+}
+
+.article2 {
+  padding-top: 10px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-content: flex-start;
+}
+
+.dropbtn {
+  background-color: rgb(0, 112, 103);
+  color: white;
+  height: 56px;
+  width: 100px;
+  font-size: 16px;
+  border-style: solid;
+  border-color: rgb(0, 112, 103);
+  border-radius: 10px;
+}
+
+.menubtn {
+  background-color: rgb(0, 112, 103);
+  color: white;
+  height: 56px;
+  width: 100px;
+  font-size: 16px;
+  border-style: solid;
+  border-color: rgb(0, 112, 103);
+  border-radius: 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(0, 112, 103);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-style: solid;
+  border-color: rgb(0, 112, 103);
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:link {
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-content a:visited {
+  color: lightgray;
+}
+
+.dropdown-content a:hover {
+  text-decoration: underline;
+}
+
+.dropdown-content a:hover {
+  background-color: #26a69a;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: rgb(0, 112, 103);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+form label {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+form input {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.svg-icon {
+  width: 5em;
+  height: 5em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: rgb(0, 112, 103);
+}
+
+.svg-icon circle {
+  stroke: rgb(0, 112, 103);
+  stroke-width: 2;
+}
+
+.svg-icon:hover {
+  transform: skewY(15deg);
+}
+
+.tools {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.speech-bubble {
+  position: relative;
+  background: transparent;
+  border-radius: 0.4em;
+  border-style: solid;
+  border-color: #26a69a;
+  padding: 7px;
+  width: 300px;
+}
+
+.speech-bubble:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-right-color: #26a69a;
+  border-left: 00;
+  border-bottom: 0;
+  margin-top: -10px;
+  margin-left: -20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column2 {
+  flex: 50%;
+  margin-top: 100px;
+}
+
+.stripe {
+  height: 30px;
+  color: white;
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-image: repeating-linear-gradient(
+    -55deg,
+    #000,
+    #000 20px,
+    #ffb101 20px,
+    #ffb101 40px
+  );
+}
+
+.sponsor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sponsor-mascot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#clock {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#man {
+  position: absolute;
+  top: 60px;
+  left: 40%;
+  bottom: 20%;
+  right: 50%;
+}
+
+.rotate {
+  animation: rotation 60s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
